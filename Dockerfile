@@ -12,4 +12,4 @@ FROM golang:1.15-alpine
 
 COPY --from=builder /go/app/go-modules-update-bore-actions .
 
-ENTRYPOINT ["go-modules-update-bore-actions"]
+ENTRYPOINT ["./go-modules-update-bore-actions"]

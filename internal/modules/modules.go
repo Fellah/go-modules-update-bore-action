@@ -1,7 +1,12 @@
 package modules
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func Bar() {
-	fmt.Println("BAR")
+	for _, env := range os.Environ() {
+		fmt.Println(env)
+	}
 }
